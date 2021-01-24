@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/recyclerRelative"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@drawable/shapeemail"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/tagImageView"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:layout_marginTop="-15dp"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/tag"/>
+        <ImageView
+            android:id="@+id/freeTagImageView"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/free"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/iconset" />
+
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/iconCount"
+
+
+            android:layout_toLeftOf="@+id/iconCount"
+            android:text="free"
+             />
+
+        <TextView
+            android:id="@+id/iconCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:text="0 icons"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:textStyle="bold"
+
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/purple_700"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/viewImage"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="View Icons"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"
+            android:layout_marginTop="-15dp"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/ic_baseline_cloud_download_24"
+            android:layout_toRightOf="@+id/iconName"
+            android:layout_alignParentRight="true"
+            android:gravity="end" />
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
